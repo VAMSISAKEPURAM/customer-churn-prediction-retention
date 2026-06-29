@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔮 Customer Churn Prediction & Retention Model
+# 🔮 Customer Churn Prediction & Retention Model 
 
 **A production-grade machine learning system that predicts customer churn probability with calibrated confidence scores — enabling data-driven retention campaigns and CRM prioritization.**
 
