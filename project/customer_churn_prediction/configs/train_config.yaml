@@ -1,0 +1,108 @@
+# ==============================================================
+# Training Pipeline Configuration
+# ==============================================================
+
+project:
+  name: "customer_churn_prediction"
+  version: "0.1.0"
+  random_seed: 42
+
+# ---- Data ----
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  interim_dir: "data/interim"
+  
+  source_files:
+    customer_churn: "customer_churn.csv"
+    engagement_metrics: "customer_engagement_metrics.csv"
+    rfm: "customer_rfm.csv"
+    billing: "subscription_billing.csv"
+    orders: "orders.csv"
+    support_tickets: "support_tickets.csv"
+    campaign_responses: "campaign_responses.csv"
+
+  target_column: "churned"
+  id_column: "customer_id"
+  
+  train_test_split:
+    test_size: 0.20
+    stratify: true
+
+# ---- Feature Engineering ----
+features:
+  ordinal_columns:
+    rfm_segment:
+      - "Lost"
+      - "At Risk"
+      - "New"
+      - "Promising"
+      - "Loyal"
+      - "Champions"
+    engagement_tier:
+      - "dormant"
+      - "low"
+      - "medium"
+      - "high"
+
+  encoding:
+    target_encoding_threshold: 0.15    # Cramer's V threshold
+    ohe_cardinality_limit: 10
+    frequency_cardinality_limit: 50
+    hash_bins: 100
+
+  drop_columns:
+    - "billing_id"
+    - "metric_id"
+
+# ---- Model ----
+model:
+  algorithm: "xgboost"                 # Options: xgboost, lightgbm, logistic_regression
+  calibration_method: "isotonic"       # Options: isotonic, sigmoid, none
+
+  xgboost:
+    n_estimators: 500
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 5
+    gamma: 0.1
+    scale_pos_weight: auto             # Set to auto to balance class weights
+    eval_metric: "auc"
+    early_stopping_rounds: 50
+    use_label_encoder: false
+
+  lightgbm:
+    n_estimators: 500
+    max_depth: -1
+    learning_rate: 0.05
+    num_leaves: 31
+    subsample: 0.8
+
+  logistic_regression:
+    C: 1.0
+    penalty: "l2"
+    solver: "lbfgs"
+    max_iter: 1000
+
+# ---- Evaluation ----
+evaluation:
+  metrics:
+    - "auroc"
+    - "brier_score"
+    - "precision"
+    - "recall"
+    - "f1"
+    - "top_decile_lift"
+  
+  threshold: 0.5
+  psi_buckets: 10
+
+# ---- Artifacts ----
+artifacts:
+  model_dir: "models/registry"
+  reports_dir: "reports"
+  shap_plots: true
+  calibration_plots: true
+  feature_importance_plots: true

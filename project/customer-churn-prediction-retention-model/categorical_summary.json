@@ -1,0 +1,469 @@
+{
+    "customer_id": {
+        "cardinality": 150000,
+        "unique_values": [
+            "C000001",
+            "C000002",
+            "C000003",
+            "C000004",
+            "C000005",
+            "C000006",
+            "C000007",
+            "C000008",
+            "C000009",
+            "C000010",
+            "C000011",
+            "C000012",
+            "C000013",
+            "C000014",
+            "C000015",
+            "C000016",
+            "C000017",
+            "C000018",
+            "C000019",
+            "C000020"
+        ],
+        "cramers_v": 0.8909427624231291
+    },
+    "contract_type": {
+        "cardinality": 3,
+        "unique_values": [
+            "biennial",
+            "month-to-month",
+            "annual"
+        ],
+        "cramers_v": 0.002191497030820598
+    },
+    "payment_method": {
+        "cardinality": 4,
+        "unique_values": [
+            "credit_card",
+            "paypal",
+            "ach",
+            "invoice"
+        ],
+        "cramers_v": 0.007056441786953784
+    },
+    "churn_reason": {
+        "cardinality": 5,
+        "unique_values": [
+            "service",
+            "none",
+            "competitor",
+            "price",
+            "relocation"
+        ],
+        "cramers_v": 0.8323982622057668
+    },
+    "retention_offer_sent": {
+        "cardinality": 4,
+        "unique_values": [
+            "none",
+            "sms",
+            "call",
+            "email"
+        ],
+        "cramers_v": 0.0019802954365897175
+    },
+    "last_contact_date": {
+        "cardinality": 366,
+        "unique_values": [
+            "2026-03-25",
+            "2025-10-16",
+            "2025-10-19",
+            "2026-03-10",
+            "2026-04-05",
+            "2025-09-21",
+            "2025-07-06",
+            "2025-08-03",
+            "2026-05-07",
+            "2025-09-25",
+            "2026-04-17",
+            "2026-04-22",
+            "2025-09-05",
+            "2026-03-18",
+            "2026-02-02",
+            "2026-02-27",
+            "2026-05-26",
+            "2025-07-28",
+            "2025-09-13",
+            "2025-07-10"
+        ],
+        "cramers_v": 0.05955504467877991
+    },
+    "account_manager": {
+        "cardinality": 17858,
+        "unique_values": [
+            "Gabrielle Davis",
+            "Ryan Munoz",
+            "Monica Herrera",
+            "Jamie Arnold",
+            "Lisa Hensley",
+            "Michele Williams",
+            "Dylan Miller",
+            "Brian Ramirez",
+            "Holly Wood",
+            "Derek Zuniga",
+            "Lisa Jackson",
+            "Carla Gray",
+            "Margaret Hawkins DDS",
+            "Patty Perez",
+            "Ethan Adams",
+            "Tommy Walter",
+            "Matthew Foster",
+            "Judy Baker",
+            "Justin Baker",
+            "Stephanie Ross"
+        ],
+        "cramers_v": 0.4409737760415275
+    },
+    "updated_at": {
+        "cardinality": 366,
+        "unique_values": [
+            "2025-10-19",
+            "2026-03-10",
+            "2026-04-05",
+            "2025-09-21",
+            "2025-07-06",
+            "2025-08-03",
+            "2026-05-07",
+            "2025-09-25",
+            "2026-04-17",
+            "2026-04-22",
+            "2025-09-05",
+            "2026-03-18",
+            "2026-02-02",
+            "2026-02-27",
+            "2026-05-26",
+            "2025-07-28",
+            "2025-09-13",
+            "2025-07-10",
+            "2025-11-20",
+            "2026-04-04"
+        ],
+        "cramers_v": 0.06257077400754857
+    },
+    "rfm_segment": {
+        "cardinality": 6,
+        "unique_values": [
+            "Lost",
+            "Promising",
+            "New",
+            "At Risk",
+            "Loyal",
+            "Champions"
+        ],
+        "cramers_v": 0.0033828960830958725
+    },
+    "billing_id": {
+        "cardinality": 126960,
+        "unique_values": [
+            "BIL00000001",
+            "BIL00000002",
+            "BIL00000003",
+            "BIL00000004",
+            "BIL00000005",
+            "BIL00000006",
+            "BIL00000007",
+            "BIL00000008",
+            "BIL00000009",
+            "BIL00000010",
+            "BIL00000011",
+            "BIL00000012",
+            "BIL00000013",
+            "BIL00000014",
+            "BIL00000015",
+            "BIL00000016",
+            "BIL00000017",
+            "BIL00000018",
+            "BIL00000019",
+            "BIL00000020"
+        ],
+        "cramers_v": 0.8579554914324717
+    },
+    "plan_name": {
+        "cardinality": 19820,
+        "unique_values": [
+            "Reverse-engineered static implementation",
+            "Extended systematic task-force",
+            "Stand-alone incremental algorithm",
+            "Configurable non-volatile capability",
+            "Profit-focused encompassing methodology",
+            "Centralized upward-trending Internet solution",
+            "Virtual grid-enabled concept",
+            "Customer-focused holistic model",
+            "Synergized leadingedge parallelism",
+            "Extended system-worthy budgetary management",
+            "Pre-emptive web-enabled benchmark",
+            "Mandatory tertiary throughput",
+            "Innovative incremental strategy",
+            "Optimized cohesive artificial intelligence",
+            "Switchable real-time interface",
+            "Profit-focused transitional collaboration",
+            "Switchable value-added challenge",
+            "Innovative radical forecast",
+            "Automated grid-enabled encoding",
+            "Universal encompassing core"
+        ],
+        "cramers_v": 0.393234071510043
+    },
+    "contract_type_bill": {
+        "cardinality": 4,
+        "unique_values": [
+            "biennial",
+            "annual",
+            "month-to-month",
+            "Unknown"
+        ],
+        "cramers_v": 0.003565627433690963
+    },
+    "billing_cycle": {
+        "cardinality": 4,
+        "unique_values": [
+            "annual",
+            "monthly",
+            "quarterly",
+            "Unknown"
+        ],
+        "cramers_v": 0.0
+    },
+    "payment_method_bill": {
+        "cardinality": 5,
+        "unique_values": [
+            "paypal",
+            "ach",
+            "invoice",
+            "credit_card",
+            "Unknown"
+        ],
+        "cramers_v": 0.0065700323825021185
+    },
+    "contract_end_date": {
+        "cardinality": 367,
+        "unique_values": [
+            "2026-02-14",
+            "2026-02-25",
+            "2026-03-02",
+            "2025-10-07",
+            "2026-03-25",
+            "2025-10-16",
+            "2025-10-19",
+            "2026-03-10",
+            "2026-04-05",
+            "2025-09-21",
+            "2025-07-06",
+            "2025-08-03",
+            "2026-05-07",
+            "2025-09-25",
+            "2026-04-17",
+            "2026-04-22",
+            "2025-09-05",
+            "2026-03-18",
+            "2026-02-02",
+            "2026-02-27"
+        ],
+        "cramers_v": 0.054678597725953175
+    },
+    "billing_address_city": {
+        "cardinality": 13327,
+        "unique_values": [
+            "Phamfort",
+            "Port Shawn",
+            "Danamouth",
+            "Johnnyland",
+            "Lake Barbarabury",
+            "Singletonburgh",
+            "New Robert",
+            "New Kenneth",
+            "Brandonshire",
+            "Juliamouth",
+            "Deborahland",
+            "Bradfordstad",
+            "North Franklintown",
+            "North Jessica",
+            "West Mark",
+            "Pinedatown",
+            "Harrisport",
+            "Lindaborough",
+            "Port Jason",
+            "East Sherri"
+        ],
+        "cramers_v": 0.3211110730839989
+    },
+    "invoice_delivery": {
+        "cardinality": 4,
+        "unique_values": [
+            "mail",
+            "email",
+            "portal",
+            "Unknown"
+        ],
+        "cramers_v": 0.003089738933633838
+    },
+    "account_manager_bill": {
+        "cardinality": 17859,
+        "unique_values": [
+            "Noah Rhodes",
+            "Angie Henderson",
+            "Daniel Wagner",
+            "Cristian Santos",
+            "Connie Lawrence",
+            "Abigail Shaffer",
+            "Gina Moore",
+            "Gabrielle Davis",
+            "Ryan Munoz",
+            "Monica Herrera",
+            "Jamie Arnold",
+            "Lisa Hensley",
+            "Michele Williams",
+            "Dylan Miller",
+            "Brian Ramirez",
+            "Holly Wood",
+            "Derek Zuniga",
+            "Lisa Jackson",
+            "Carla Gray",
+            "Margaret Hawkins DDS"
+        ],
+        "cramers_v": 0.3727631346627605
+    },
+    "created_at": {
+        "cardinality": 1828,
+        "unique_values": [
+            "2024-10-14",
+            "2025-06-18",
+            "2023-01-20",
+            "2026-04-23",
+            "2024-03-25",
+            "2022-11-22",
+            "2024-09-25",
+            "2024-10-25",
+            "2025-07-05",
+            "2025-12-24",
+            "2024-07-08",
+            "2024-04-02",
+            "2025-12-03",
+            "2022-03-04",
+            "2025-07-02",
+            "2026-02-11",
+            "2024-04-11",
+            "2023-09-22",
+            "2023-09-08",
+            "2023-05-05"
+        ],
+        "cramers_v": 0.11771238344791149
+    },
+    "updated_at_bill": {
+        "cardinality": 367,
+        "unique_values": [
+            "2025-08-20",
+            "2026-05-17",
+            "2025-10-12",
+            "2026-02-14",
+            "2026-02-25",
+            "2026-03-02",
+            "2025-10-07",
+            "2026-03-25",
+            "2025-10-16",
+            "2025-10-19",
+            "2026-03-10",
+            "2026-04-05",
+            "2025-09-21",
+            "2025-07-06",
+            "2025-08-03",
+            "2026-05-07",
+            "2025-09-25",
+            "2026-04-17",
+            "2026-04-22",
+            "2025-09-05"
+        ],
+        "cramers_v": 0.05134607493198663
+    },
+    "metric_id": {
+        "cardinality": 219231,
+        "unique_values": [
+            "ENG00000001",
+            "ENG00150001",
+            "ENG00000002",
+            "ENG00150002",
+            "ENG00000003",
+            "ENG00150003",
+            "ENG00000004",
+            "ENG00150004",
+            "ENG00000005",
+            "ENG00150005",
+            "ENG00000006",
+            "ENG00150006",
+            "ENG00000007",
+            "ENG00150007",
+            "ENG00000008",
+            "ENG00150008",
+            "ENG00000009",
+            "ENG00150009",
+            "ENG00000010",
+            "ENG00150010"
+        ],
+        "cramers_v": 0.8578911143593445
+    },
+    "last_login_date": {
+        "cardinality": 366,
+        "unique_values": [
+            "2025-08-20",
+            "2025-09-17",
+            "2026-05-17",
+            "2026-03-24",
+            "2025-10-12",
+            "2026-05-04",
+            "2026-02-14",
+            "2026-02-25",
+            "2026-03-20",
+            "2026-03-02",
+            "2025-06-25",
+            "2025-10-07",
+            "2025-08-21",
+            "2026-03-25",
+            "2026-04-08",
+            "2025-10-16",
+            "2025-09-22",
+            "2025-10-19",
+            "2026-01-29",
+            "2026-03-10"
+        ],
+        "cramers_v": 0.04600422234590479
+    },
+    "engagement_tier": {
+        "cardinality": 4,
+        "unique_values": [
+            "dormant",
+            "low",
+            "medium",
+            "high"
+        ],
+        "cramers_v": 0.004019850621618331
+    },
+    "measured_date": {
+        "cardinality": 366,
+        "unique_values": [
+            "2025-08-20",
+            "2025-09-17",
+            "2026-05-17",
+            "2026-03-24",
+            "2025-10-12",
+            "2026-05-04",
+            "2026-02-14",
+            "2026-02-25",
+            "2026-03-20",
+            "2026-03-02",
+            "2025-06-25",
+            "2025-10-07",
+            "2025-08-21",
+            "2026-03-25",
+            "2026-04-08",
+            "2025-10-16",
+            "2025-09-22",
+            "2025-10-19",
+            "2026-01-29",
+            "2026-03-10"
+        ],
+        "cramers_v": 0.04600422234590479
+    }
+}

@@ -1,0 +1,31 @@
+# ==============================================================
+# Prediction / Scoring Pipeline Configuration
+# ==============================================================
+
+project:
+  name: "customer_churn_prediction"
+  version: "0.1.0"
+
+data:
+  input_path: "data/processed/scoring_input.csv"
+  output_path: "reports/scored_customers.csv"
+  id_column: "customer_id"
+
+model:
+  artifact_path: "models/registry/churn_model_latest.pkl"
+  encoder_path: "models/registry/categorical_encoders.pkl"
+  feature_names_path: "models/registry/feature_names.json"
+
+scoring:
+  score_column: "churn_probability"
+  score_date_column: "score_date"
+  decile_column: "risk_decile"
+  include_shap: false                   # Set true for explainability output (slower)
+
+output:
+  format: "csv"                         # Options: csv, json
+  include_columns:
+    - "customer_id"
+    - "churn_probability"
+    - "risk_decile"
+    - "score_date"
